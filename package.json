@@ -1,7 +1,8 @@
 {
-  "name": "hardhat-hackathon-boilerplate",
+  "name": "crowdfundr",
   "version": "1.0.0",
-  "description": "A boilerplate repository to get you started with Hardhat and Ethereum development",
+  "description": "This repository contains a sample project that you can use as the starting point for your Ethereum project. It's also a great fit for learning the basics of smart contract development.",
+  "main": "hardhat.config.js",
   "directories": {
     "test": "test"
   },
@@ -12,20 +13,20 @@
     "type": "git",
     "url": "git+https://github.com/nomiclabs/hardhat-hackathon-boilerplate.git"
   },
-  "keywords": [
-    "hardhat",
-    "ethereum",
-    "hackathon"
-  ],
-  "author": "Nomic Labs",
-  "license": "MIT",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "bugs": {
     "url": "https://github.com/nomiclabs/hardhat-hackathon-boilerplate/issues"
   },
   "homepage": "https://github.com/nomiclabs/hardhat-hackathon-boilerplate#readme",
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.3.0"
+  },
   "devDependencies": {
     "@nomiclabs/hardhat-ethers": "^2.0.0",
     "@nomiclabs/hardhat-waffle": "^2.0.0",
+    "@openzeppelin/test-helpers": "^0.5.13",
     "chai": "^4.2.0",
     "ethereum-waffle": "^3.1.1",
     "ethers": "^5.0.0",

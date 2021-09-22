@@ -1,4 +1,4 @@
-# Hardhat Hackathon Boilerplate
+# Crowdfundr
 
 This repository contains a sample project that you can use as the starting point
 for your Ethereum project. It's also a great fit for learning the basics of
@@ -8,6 +8,35 @@ This project is intended to be used with the
 [Hardhat Beginners Tutorial](https://hardhat.org/tutorial), but you should be
 able to follow it by yourself by reading the README and exploring its
 `contracts`, `tests`, `scripts` and `frontend` directories.
+
+## Specification
+
+```
+- The smart contract is reusable; multiple projects can be registered and accept ETH concurrently.
+- The goal is a preset amount of ETH.
+  - This cannot be changed after a project gets created.
+- Regarding contributing:
+  - The contribute amount must be at least 0.01 ETH.
+  - There is no upper limit.
+  - Anyone can contribute to the project, including the creator.
+  - One address can contribute as many times as they like.
+- Regarding tiers:
+  - There are three tiers.
+  - Bronze tier is granted to anyone contribution.
+  - Silver tier is granted to a total contribution of at least 0.25 ETH.
+  - Gold tier is granted to a total contribution of at least 1 ETH.
+  - Tiers should be granted immediately so other apps can read them.
+  - "Total contribution" is scoped per-project (like kickstarter).
+- If the project is not fully funded within 30 days:
+  - The project goal is considered to have failed.
+  - No one can contribute anymore.
+  - Supporters get their money back.
+  - Tier grants are revoked.
+- Once a project becomes fully funded:
+  - No one else can contribute (however, the last contribution can go over the goal).
+  - The creator can withdraw any percentage of contributed funds.
+- The creator can choose to cancel their project before the 30 days are over, which has the same effect as a project failing.
+```
 
 ## Quick start
 
