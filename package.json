@@ -7,7 +7,9 @@
     "test": "test"
   },
   "scripts": {
-    "test": "hardhat test"
+    "build": "waffle",
+    "test": "hardhat test",
+    "test:watch": "nodemon -x 'npx hardhat test' -w contracts -w test -e js,sol"
   },
   "repository": {
     "type": "git",
@@ -21,7 +23,8 @@
   },
   "homepage": "https://github.com/nomiclabs/hardhat-hackathon-boilerplate#readme",
   "dependencies": {
-    "@openzeppelin/contracts": "^4.3.0"
+    "@openzeppelin/contracts": "^4.3.2",
+    "nodemon": "^2.0.12"
   },
   "devDependencies": {
     "@nomiclabs/hardhat-ethers": "^2.0.0",
